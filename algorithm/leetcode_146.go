@@ -1,5 +1,8 @@
 package main
 
+/*
+*146. LRU缓存机制
+ */
 type LRUCache struct {
 	size, capacity           int
 	cache                    map[int]*MyListNode
