@@ -2,14 +2,14 @@ package main
 
 /*
 *
-912. 排序数组
+912. 排序数组 虽然跟java不一样 引用对象要传地址啊 我都改成地址了 为啥你还是跑失败了
 */
 func sortArray(nums []int) []int {
 	quicksort(&nums, 0, len(nums)-1)
 	return nums
 }
 
-func partition(arr *[]int, r, l int) int {
+func partition(arr *[]int, l, r int) int {
 	nums := *arr
 	pivot := nums[l]
 	index := l + 1
@@ -39,3 +39,8 @@ func quicksort(nums *[]int, l, r int) {
 //	nums[a] = nums[b]
 //	nums[b] = temp
 //}
+
+func main() {
+	nums := []int{5, 2, 3, 1}
+	sortArray(nums)
+}
