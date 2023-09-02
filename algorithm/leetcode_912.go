@@ -39,8 +39,3 @@ func quicksort(nums *[]int, l, r int) {
 //	nums[a] = nums[b]
 //	nums[b] = temp
 //}
-
-func main() {
-	nums := []int{5, 2, 3, 1}
-	sortArray(nums)
-}

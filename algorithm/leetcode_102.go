@@ -14,6 +14,7 @@ func levelOrder(root *TreeNode) [][]int {
 		size := len(list)
 		vals := make([]int, size)
 		for i := range vals {
+			// 实现队列 每次删除头结点
 			node := list[0]
 			list = list[1:]
 			vals[i] = node.Val
