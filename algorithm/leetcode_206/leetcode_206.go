@@ -1,4 +1,8 @@
-package main
+package leetcode_206
+
+import (
+	"go-algorithm/algorithm/structs"
+)
 
 /*
 *
@@ -6,7 +10,7 @@ package main
 */
 
 // 递归
-func reverseList(head *ListNode) *ListNode {
+func reverseList(head *structs.ListNode) *structs.ListNode {
 	if head == nil || head.Next == nil {
 		return head
 	}
@@ -17,8 +21,8 @@ func reverseList(head *ListNode) *ListNode {
 }
 
 // 迭代
-func reverseList2(head *ListNode) *ListNode {
-	var l *ListNode = nil
+func reverseList2(head *structs.ListNode) *structs.ListNode {
+	var l *structs.ListNode = nil
 	r := head
 	for r != nil {
 		next := r.Next

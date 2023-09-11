@@ -1,4 +1,4 @@
-package main
+package leetcode_146
 
 /*
 *146. LRU缓存机制

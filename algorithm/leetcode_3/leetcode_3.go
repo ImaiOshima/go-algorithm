@@ -1,4 +1,4 @@
-package main
+package leetcode_3
 
 /*
 *3. 无重复字符的最长子串
@@ -21,6 +21,14 @@ func lengthOfLongestSubstring(s string) int {
 
 func Max(a, b int) int {
 	if a >= b {
+		return a
+	} else {
+		return b
+	}
+}
+
+func Min(a, b int) int {
+	if a <= b {
 		return a
 	} else {
 		return b

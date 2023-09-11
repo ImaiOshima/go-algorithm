@@ -1,10 +1,14 @@
-package main
+package leetcode_25
+
+import (
+	"go-algorithm/algorithm/structs"
+)
 
 /*
 *25. K 个一组翻转链表
  */
-func reverseKGroup(head *ListNode, k int) *ListNode {
-	dump := &ListNode{}
+func reverseKGroup(head *structs.ListNode, k int) *structs.ListNode {
+	dump := &structs.ListNode{}
 	dump.Next = head
 	lNode := dump
 	rNode := dump
@@ -26,7 +30,7 @@ func reverseKGroup(head *ListNode, k int) *ListNode {
 	return dump.Next
 }
 
-func reverseNode(target *ListNode) *ListNode {
+func reverseNode(target *structs.ListNode) *structs.ListNode {
 	if target == nil || target.Next == nil {
 		return target
 	}

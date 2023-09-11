@@ -1,10 +1,12 @@
-package main
+package leetcode_21
+
+import "go-algorithm/algorithm/structs"
 
 /**
 21. 合并两个有序链表
 */
 
-func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
+func mergeTwoLists(list1 *structs.ListNode, list2 *structs.ListNode) *structs.ListNode {
 	if list1 == nil {
 		return list2
 	} else if list2 == nil {

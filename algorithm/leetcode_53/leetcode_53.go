@@ -1,4 +1,4 @@
-package main
+package leetcode_53
 
 import "math"
 

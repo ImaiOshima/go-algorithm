@@ -1,15 +1,17 @@
-package main
+package leetcode_102
+
+import "go-algorithm/algorithm/structs"
 
 /**
 102. 二叉树的层序遍历
 */
 
-func levelOrder(root *TreeNode) [][]int {
+func levelOrder(root *structs.TreeNode) [][]int {
 	var ans [][]int
 	if root == nil {
 		return ans
 	}
-	list := []*TreeNode{root}
+	list := []*structs.TreeNode{root}
 	for len(list) != 0 {
 		size := len(list)
 		vals := make([]int, size)

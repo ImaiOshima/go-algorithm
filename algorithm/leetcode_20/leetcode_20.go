@@ -1,4 +1,4 @@
-package main
+package leetcode_20
 
 /**
 20. 有效的括号

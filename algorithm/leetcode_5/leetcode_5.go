@@ -1,4 +1,4 @@
-package main
+package leetcode_5
 
 import "fmt"
 
@@ -40,7 +40,7 @@ func longestPalindrome(s string) string {
 	return s[maxStart+1 : maxStart+maxLength+1]
 }
 
-func main() {
-	s := "cbbd"
-	longestPalindrome(s)
-}
+//func main() {
+//	s := "cbbd"
+//	longestPalindrome(s)
+//}
